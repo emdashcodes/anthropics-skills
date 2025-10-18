@@ -1,42 +1,22 @@
 {
-  "name": "anthropic-agent-skills",
+  "name": "anthropics-skills",
   "owner": {
     "name": "Keith Lazuka",
     "email": "klazuka@anthropic.com"
   },
   "metadata": {
-    "description": "Anthropic example skills",
+    "description": "Skills demonstrating Claude's capabilities across creative, technical, and enterprise tasks. Includes meta skills for creating effective custom skills and MCP servers.",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "document-skills",
-      "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./document-skills/xlsx",
-        "./document-skills/docx",
-        "./document-skills/pptx",
-        "./document-skills/pdf"
-      ]
-    },
-    {
-      "name": "example-skills",
-      "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
+      "name": "meta-skills",
+      "description": "Guides for creating effective skills and building high-quality MCP servers to extend Claude's capabilities",
       "source": "./",
       "strict": false,
       "skills": [
         "./skill-creator",
-        "./mcp-builder",
-        "./canvas-design",
-        "./algorithmic-art",
-        "./internal-comms",
-        "./webapp-testing",
-        "./artifacts-builder",
-        "./slack-gif-creator",
-        "./theme-factory",
-        "./brand-guidelines"
+        "./mcp-builder"
       ]
     }
   ]
